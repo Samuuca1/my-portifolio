@@ -111,8 +111,8 @@ footer{
 .content{
     width: 37%;
     height: 74%;
-    top: 20;
-    left: 20;
+    top: center;
+    left: center;
     position: absolute;
     background: rgba(0, 0, 0, 0.751);
     display: flex;
