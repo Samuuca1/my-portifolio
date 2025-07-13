@@ -18,8 +18,3 @@ closePic.addEventListener('click', () => wrapper.style.display = 'none')
 
 
 
-/*
-console.log(images);
-console.log(wrapper);
-console.log(imgWrapper);
-console.log(closePic);*/
