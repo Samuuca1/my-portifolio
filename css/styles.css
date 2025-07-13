@@ -21,6 +21,43 @@ h1{
     font-family: "WindSong", cursive;
     color: rgb(240, 238, 238);
 }
+h4{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.473);
+    display: flex;
+}
+h4::before, h4::after{
+    content: '.';
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.486);
+    display: block;
+    position: absolute;
+    top: 5px;
+    left:5px;
+    color:aliceblue
+}
+h4:hover::before{
+    animation: glitch 0.3s linear 6;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #e91e63;
+    color: #e91e63;
+    z-index: -2;
+}
+h4:hover::after{
+    animation: glitch 0.3s linear 6 reverse;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color:#2196f3;
+    color: #2196f3;
+    z-index: -1;
+}
 header{
     background-color: rgba(22, 22, 22, 0.425);
     padding: 20px;
@@ -90,6 +127,34 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@keyframes glitch {
+    0%{
+       top:0;
+       left:0; 
+    }
+    20%{
+       top:-5px;
+       left:-5px; 
+    }
+    40%{
+       top:5px;
+       left:5px; 
+    }
+    60%{
+       top:-5px;
+       left:5px; 
+    }
+    80%{
+       top:5px;
+       left:-5px; 
+    }
+    100%{
+       top:0;
+       left:0; 
+    }
+
 }
 
 @media (max-width: 600px) {
