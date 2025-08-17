@@ -2,33 +2,36 @@
 
 
 
-body{
-   font-family: Arial, Helvetica, sans-serif;
-   margin: 0;
-   padding: 0;
-   line-height: 1.6;
-   text-align: center;
-   background-image: url(astronaut-3840x2160-23207.png);
-   background-repeat:no-repeat;
-   background-position: center;
-   background-attachment:fixed;
-   background-size: cover;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    background-image: url(astronaut-3840x2160-23207.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 
 
 }
 
-h1{
+h1 {
     font-family: "WindSong", cursive;
     color: rgb(240, 238, 238);
 }
-h4{
+
+h4 {
     width: 100px;
     height: 100px;
     border-radius: 100%;
     background-color: rgba(240, 248, 255, 0.473);
     display: flex;
 }
-h4::before, h4::after{
+
+h4::before,
+h4::after {
     content: '.';
     width: 100px;
     height: 100px;
@@ -37,10 +40,11 @@ h4::before, h4::after{
     display: block;
     position: absolute;
     top: 5px;
-    left:5px;
-    color:aliceblue
+    left: 5px;
+    color: aliceblue
 }
-h4:hover::before{
+
+h4:hover::before {
     animation: glitch 0.3s linear 6;
     width: 100px;
     height: 100px;
@@ -49,33 +53,35 @@ h4:hover::before{
     color: #e91e63;
     z-index: -2;
 }
-h4:hover::after{
+
+h4:hover::after {
     animation: glitch 0.3s linear 6 reverse;
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    background-color:#2196f3;
+    background-color: #2196f3;
     color: #2196f3;
     z-index: -1;
 }
-header{
+
+header {
     background-color: rgba(22, 22, 22, 0.425);
     padding: 20px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     margin: 0 15px;
-    
+
 }
 
-nav ul li a{
+nav ul li a {
     color: aliceblue;
     text-decoration: none;
     border: 3px outset aliceblue;
@@ -83,43 +89,50 @@ nav ul li a{
     padding: 3px;
     box-shadow: 2px 2px 10px rgb(92, 91, 91);
 }
-h2{
+
+h2 {
     font-family: "WindSong";
     letter-spacing: 2px;
     font-weight: 20;
 }
+
 aside ul {
     list-style: none;
     padding: 0px;
 }
-aside ul li{
+
+aside ul li {
     display: inline;
     margin: 0 15px;
 }
-aside ul li a{
+
+aside ul li a {
     color: aliceblue;
     text-decoration: none;
     border: 4px groove aliceblue;
     border-radius: 10px;
     padding: 3px;
     box-shadow: 2px 2px 10px rgb(92, 91, 91)
-    
 }
-a:hover{
-   color: rgb(190, 146, 190);
-   text-decoration: underline;
+
+a:hover {
+    color: rgb(190, 146, 190);
+    text-decoration: underline;
 }
-main{
+
+main {
     padding: 20px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-article, section,aside{
+article,
+section,
+aside {
     margin-bottom: 330px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-footer{
+footer {
     background: rgba(22, 22, 22, 0.425);
     margin-top: -150px;
     color: aliceblue;
@@ -129,14 +142,66 @@ footer{
     bottom: 0;
 }
 
+body.light-mode {
+    background: #f4f4f4;
+    color: #222;
+    background-image: url(invertastronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background: rgba(230, 230, 230, 0.9);
+    color: #222;
+}
+
+body.light-mode a {
+    color: #222;
+    border-color: #222;
+}
+
+body.light-mode a:hover {
+    color: #4caf50;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: #222;
+}
+
+
+#themeToggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+#themeToggle:hover {
+    background: #45a049;
+}
+
 
 @media (max-width: 600px) {
-    nav ul li{
+    nav ul li {
         display: inline-block;
         margin: 5px;
         word-spacing: 1px;
     }
-    body{
+
+    body {
         word-spacing: 2px;
     }
 }
