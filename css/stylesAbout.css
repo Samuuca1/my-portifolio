@@ -5,7 +5,7 @@
 body{
    font-family: Arial, Helvetica, sans-serif;
    margin: 0;
-   padding: 0;
+
    line-height: 1.6;
    text-align: center;
    background-image: url(astronaut-3840x2160-23207.png);
@@ -13,6 +13,7 @@ body{
    background-position: center;
    background-attachment:fixed;
    background-size: cover;
+   padding-bottom: 120px;
 }
 h1{
     font-family: "WindSong", cursive;
@@ -47,6 +48,7 @@ a:hover{
 main{
     padding: 20px;
     color:aliceblue;
+    padding-bottom: 120px;
 }
 footer{
     background: rgba(22, 22, 22, 0.425);
@@ -131,7 +133,25 @@ footer{
 
 
 
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #838583;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.home-btn:hover {
+    background: #5353536d;
+}
 
 
 @media (max-width: 600px) {

@@ -181,7 +181,7 @@ body.light-mode h3 {
     padding: 8px 14px;
     border: none;
     border-radius: 6px;
-    background: #4caf50;
+    background: #4849488c;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -190,7 +190,8 @@ body.light-mode h3 {
 }
 
 #themeToggle:hover {
-    background: #45a049;
+    background: #e2e7e2;
+    color: black
 }
 
 
