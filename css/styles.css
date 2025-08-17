@@ -129,33 +129,6 @@ footer{
     bottom: 0;
 }
 
-@keyframes glitch {
-    0%{
-       top:0;
-       left:0; 
-    }
-    20%{
-       top:-5px;
-       left:-5px; 
-    }
-    40%{
-       top:5px;
-       left:5px; 
-    }
-    60%{
-       top:-5px;
-       left:5px; 
-    }
-    80%{
-       top:5px;
-       left:-5px; 
-    }
-    100%{
-       top:0;
-       left:0; 
-    }
-
-}
 
 @media (max-width: 600px) {
     nav ul li{
