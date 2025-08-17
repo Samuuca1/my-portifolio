@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/stylesContact.css">
+    <script src="contacts.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello this is my contact page</h1>
+    <h1>Contact Me</h1>
+    <p>I would love to hear from you!</p>
+    <form>
+        <div class="flex-container">
+            <label>Full Name</label>
+            <input name="inputFName" placeholder="First and Last name" />
+            <div class="error-hint hidden"> You must insert your name. </div>
+        </div>
+        <div class="flex-container">
+            <label>Email</label>
+            <input name="inputEmail" placeholder="name@mail.com" />
+            <div class="error-hint hidden"> You must insert email. </div>
+        </div>
+        <div class="flex-container">
+            <label>Phone number</label>
+            <input name="inputNum" placeholder="0000000000" />
+            <div class="error-hint hidden"> You must insert number. </div>
+        </div>
+        <div class="flex-container">
+            <label>Feedback:</label>
+            <textarea name="inputFeedback"></textarea>
+            <div class="error-hint hidden"> Please tell me something. </div>
+        </div>
+        <button>Submit</button>
+    </form>
+    <div class="success hidden">I appreciate your time and message!
+    </div>
+    <footer>
+        <p> &copy; Copyright 1996-2025 by Samuel`s Data. All Rights Reserved. Samuel is Powered by Caffeine</p>
+    </footer>
 </body>
+
 </html>

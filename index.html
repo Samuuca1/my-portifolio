@@ -7,33 +7,53 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>My portifolio</h1>
+    <h1>Samuel de Alexandria Carvalho Chaves</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='about.html'>About me</a></li>
+                <li><a href='projects.html'>My projects</a></li>
+                <li><a href='contact.html'>Contact Info</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <section class="intro">
-        <h2>Samuel de Alexandria Carvalho Chaves</h2>
-        <p>This page is for my portifolio project from Humber!</p>
-    </section>
-    
-    <section class="buttons">
-        <h3> Menu options </h3>
-        <div class="flex-buttons">
-            <div class="flex-button1">
-                <p1><a href="about.html"> About me </a></p1>
-            </div>
-            <div class="flex-button1">
-                <p1><a href="projects.html"> My projects </a></p1>
-            </div>
-            <div class="flex-button1">
-                <p1><a href="contact.html"> Contact info </a></p1>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <h6> &copy; Copyright 1996-2025 by Samuel`s Data. All Rights Reserved. Samuel is Powered by Caffeine </h6>
+    <main>
+        <article>
+            <h2>My portifolio</h2>
+            <p>I hope you enjoy my page!</p>
+        </article>
+        <aside>
+            <h3>Related Posts</h3>
+            <ul>
+                <li><a href='https://www.linkedin.com/in/samuel-chaves-994402261/'>LinkedIN</a></li>
+                <li><a href='https://github.com/Samuuca1'>GitHub</a></li>
+                <li><a href='https://www.instagram.com/samalexandria1'>Instagram</a></li>
+            </ul>
+        </aside>
+        <h4 class="circle"></h4>
+        <script>
+            document.querySelector('.circle').animate([
+            {
+                transform: 'translateY(-1050px)',
+                backgroundColor: 'red'
+            },
+            {
+                transform: 'translateY(-250px)',
+                backgroundColor: 'blue'
+            }
+        ], {
+            duration: 1000,
+            iterations: Infinity,
+            direction: 'alternate',
+            easing: 'ease-in-out'
+        })
+        </script>
+    </main>
+    <footer>
+        <p> &copy; Copyright 1996-2025 by Samuel`s Data. All Rights Reserved. Samuel is Powered by Caffeine</p>
     </footer>
 
 </body>
 </html>
+
