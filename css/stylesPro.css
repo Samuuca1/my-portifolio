@@ -4,8 +4,6 @@
 
 body{
    font-family: Arial, Helvetica, sans-serif;
-   margin: 0;
-   padding: 0;
    line-height: 1.6;
    text-align: center;
    background-image: url(astronaut-3840x2160-23207.png);
@@ -13,8 +11,6 @@ body{
    background-position: center;
    background-attachment:fixed;
    background-size: cover;
-
-
 }
 
 h1{
@@ -22,27 +18,35 @@ h1{
     color: rgb(240, 238, 238);
 }
 
-h2{
-    color: aliceblue;
+h2 {
+  color: aliceblue;
+  text-align: center;
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 80%;              
+  margin: 0px auto;          
   color: aliceblue;
+  padding-bottom: 20px;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
+
+td {
+  background-color: rgba(55, 54, 54, 0.495);
+  border: 0px inset #cccccc74;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;       
+  vertical-align: middle;
 }
 
-iframe, video {
+video, iframe {
   width: 320px;
   height: 180px;
+  display: block;
+  margin: 0 auto;          
 }
 
 
