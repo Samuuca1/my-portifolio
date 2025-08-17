@@ -22,6 +22,31 @@ h1{
     color: rgb(240, 238, 238);
 }
 
+h2{
+    color: aliceblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  color: aliceblue;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+iframe, video {
+  width: 320px;
+  height: 180px;
+}
+
+
+
 
 footer{
     background: rgba(22, 22, 22, 0.425);
