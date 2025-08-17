@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Monsieur+La+Doulaise&family=WindSong:wght@400;500&display=swap&family=Shadows+Into+Light&display=swap');
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-image: url(astronaut-3840x2160-23207.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+h1 {
+    font-family: "WindSong", cursive;
+    color: rgb(240, 238, 238);
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 80%;
+    margin: 0px auto;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+
+td {
+    background-color: rgba(55, 54, 54, 0.495);
+    border: 0px inset #cccccc74;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+video,
+iframe {
+    width: 320px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill span {
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.bar {
+    display: inline-block;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.fill {
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background: rgba(22, 22, 22, 0.425);
+    margin-top: -150px;
+    color: aliceblue;
+    font-family: "Shadows Into Light", cursive;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #838583;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.home-btn:hover {
+    background: #5353536d;
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: inline-block;
+        margin: 5px;
+        word-spacing: 1px;
+    }
+
+    body {
+        word-spacing: 2px;
+    }
+}

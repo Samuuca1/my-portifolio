@@ -5,7 +5,7 @@
 body{
    font-family: Arial, Helvetica, sans-serif;
    margin: 0;
-   padding: 0;
+   padding-bottom: 120px;
    line-height: 1.6;
    text-align: flex;
    background-image: url(astronaut-3840x2160-23207.png);
@@ -126,6 +126,26 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #838583;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.home-btn:hover {
+    background: #5353536d;
 }
 
 @keyframes shine {
