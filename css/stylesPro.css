@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Monsieur+La+Doulaise&family=WindSong:wght@400;500&display=swap&family=Shadows+Into+Light&display=swap');
+
+
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   line-height: 1.6;
+   text-align: center;
+   background-image: url(astronaut-3840x2160-23207.png);
+   background-repeat:no-repeat;
+   background-position: center;
+   background-attachment:fixed;
+   background-size: cover;
+
+
+}
+
+h1{
+    font-family: "WindSong", cursive;
+    color: rgb(240, 238, 238);
+}
+
+
+footer{
+    background: rgba(22, 22, 22, 0.425);
+    margin-top: -150px;
+    color: aliceblue;
+    font-family: "Shadows Into Light", cursive;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+    nav ul li{
+        display: inline-block;
+        margin: 5px;
+        word-spacing: 1px;
+    }
+    body{
+        word-spacing: 2px;
+    }
+}
